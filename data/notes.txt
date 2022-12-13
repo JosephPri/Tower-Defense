@@ -1,0 +1,9 @@
+THINGS TO ADD:
+
+new map
+
+round complete bonus
+
+tower collisions (cant place on path or on top of each other)
+
+sell tower function?
