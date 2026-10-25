@@ -61,7 +61,7 @@ void setup() {
   rectMode(CENTER);
   imageMode(CENTER);
   textAlign(CENTER, CENTER);
-  size(1000, 800);
+  size(1000, 800, P2D);
   frameRate(60);
   initializeModes();
   initializeVariables();
