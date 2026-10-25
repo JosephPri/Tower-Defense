@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Fox Defence</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #0f1f22;
+      overflow: hidden;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* Scale the 1000x800 game to fit any window, keeping its 5:4 shape.
+       p5 maps the mouse position back to game coordinates automatically. */
+    canvas {
+      display: block;
+      width: min(100vw, 125vh) !important;
+      height: auto !important;
+      touch-action: none;
+    }
+    #p5_loading {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6bd6b5;
+      font: 600 24px/1 system-ui, sans-serif;
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+  <div id="p5_loading">Loading…</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
